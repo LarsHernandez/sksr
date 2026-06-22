@@ -10,13 +10,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Suggests: 
     rmarkdown
-VignetteBuilder: knitr
-Imports: dplyr,
-        tibble,
-        knitr,
-        forcats,
-        rlang,
-        Rdpack
+Imports: Rdpack
 Depends: R (>= 3.5.0)
 RdMacros: Rdpack
 LazyData: true

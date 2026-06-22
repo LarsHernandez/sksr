@@ -1,0 +1,55 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-"
+)
+```
+
+# sksr - SKS labels i R
+
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/sksr)](https://cran.r-project.org/package=sksr)
+
+Hovedfunktionen for sksr er at give labels til danske SKS koder. Koderne er fra Sundhedsdatastyrelsen [sundhedsdata.dk](https://filer.sundhedsdata.dk/sks/data/skscomplete/) og er med versionen opdateret: 16-06-2026
+
+## SNOMED koder
+
+SKS systemet inkluderer nogle SNOMED koder, der er dog inkluderet det fulde sæt fra ...
+
+## Installation
+
+sksr kan installeres fra github med kode
+
+```{r, eval = FALSE}
+pak::pkg_install("LarsHernandez/sksr")
+```
+
+# Data
+
+```{r echo=FALSE, fig.height=8.8, fig.width=10, message=FALSE, warning=FALSE}
+library(sksr)
+
+data(SKS_labels)
+data(SNOMED_labels)
+```
+
+
+```{r}
+head(SKS_labels)
+```
+
+
+```{r}
+head(SNOMED_labels)
+```
+
+
+## References
+
+Indeholder data fra Sundhedsdatastyrelsen fra ...
